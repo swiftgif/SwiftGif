@@ -2,6 +2,8 @@
 
 A small `UIImage` extension with gif support.
 
+![](demo.gif)
+
 ## Usage
 Import the `Gif.swift` in your project and do the following:
 ```swift
