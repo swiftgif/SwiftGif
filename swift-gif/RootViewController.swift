@@ -18,6 +18,12 @@ class RootViewController: UIViewController {
         super.viewDidLoad()
         
         
+        let imageData = NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("jeremy", withExtension: "gif"))
+        let jeremy = UIImage.animatedImageWithData(imageData)
+        var imageView = UIImageView(image: jeremy)
+        imageView.frame = CGRect(x: 0.0, y: 20.0, width: 350.0, height: 202.0)
+        
+        view.addSubview(imageView)
     }
     
     override func didReceiveMemoryWarning() {
