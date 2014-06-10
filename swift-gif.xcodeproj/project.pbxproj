@@ -11,6 +11,7 @@
 		14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */; };
 		14C34DB2194769CD00F68707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DB1194769CD00F68707 /* Images.xcassets */; };
 		14C34DBE194769CD00F68707 /* swift_gifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DBD194769CD00F68707 /* swift_gifTests.swift */; };
+		14C34DC8194769E100F68707 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC7194769E100F68707 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		14C34DB7194769CD00F68707 /* swift-gifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-gifTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C34DBC194769CD00F68707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C34DBD194769CD00F68707 /* swift_gifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_gifTests.swift; sourceTree = "<group>"; };
+		14C34DC7194769E100F68707 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				14C34DAC194769CD00F68707 /* AppDelegate.swift */,
+				14C34DC7194769E100F68707 /* RootViewController.swift */,
 				14C34DB1194769CD00F68707 /* Images.xcassets */,
 				14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */,
 				14C34DAA194769CD00F68707 /* Supporting Files */,
@@ -205,6 +208,7 @@
 			files = (
 				14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */,
 				14C34DAD194769CD00F68707 /* AppDelegate.swift in Sources */,
+				14C34DC8194769E100F68707 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
