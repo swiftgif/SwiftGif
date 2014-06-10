@@ -1,0 +1,24 @@
+# swift-gif
+
+A small `UIImage` extension with gif support.
+
+## Usage
+```swift
+var url = NSBundle.mainBundle().URLForResource("jeremy", withExtension: "gif")
+var imageData = NSData(contentsOfURL: url)
+
+// Returns an animated UIImage
+UIImage.animatedImageWithData(imageData)
+```
+
+## How does it work?
+Easy, it does the following:
+1. Find out the duration of every frame
+2. Find the greatest common divisor
+3. Add frames accordingly to the greatest common divisor to an array
+4. Create an animated UIImage with the frames
+
+## License
+This repository is licensed under the MIT license, more under
+[LICENSE](LICENSE).
+
