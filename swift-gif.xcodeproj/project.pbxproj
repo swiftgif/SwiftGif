@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147ACF1A1947943B00AC0F68 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 147ACF191947943B00AC0F68 /* adventure-time.gif */; };
 		14C34DAD194769CD00F68707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAC194769CD00F68707 /* AppDelegate.swift */; };
 		14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */; };
 		14C34DB2194769CD00F68707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DB1194769CD00F68707 /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		147ACF191947943B00AC0F68 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
 		14C34DA7194769CD00F68707 /* swift-gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-gif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C34DAB194769CD00F68707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C34DAC194769CD00F68707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				14C34DC919476AD600F68707 /* Gif.swift */,
 				14C34DB1194769CD00F68707 /* Images.xcassets */,
 				14C34DCB1947715B00F68707 /* jeremy.gif */,
+				147ACF191947943B00AC0F68 /* adventure-time.gif */,
 				14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */,
 				14C34DAA194769CD00F68707 /* Supporting Files */,
 			);
@@ -194,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147ACF1A1947943B00AC0F68 /* adventure-time.gif in Resources */,
 				14C34DCC1947715B00F68707 /* jeremy.gif in Resources */,
 				14C34DB2194769CD00F68707 /* Images.xcassets in Resources */,
 			);
@@ -393,6 +397,7 @@
 				14C34DC3194769CD00F68707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14C34DC4194769CD00F68707 /* Build configuration list for PBXNativeTarget "swift-gifTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +406,7 @@
 				14C34DC6194769CD00F68707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

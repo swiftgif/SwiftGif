@@ -38,8 +38,8 @@ extension UIImage {
         
         delay = number as Double
         
-        if delay < 0.011 {
-            delay = 0.01 // Make sure, they're not too fast
+        if delay < 0.1 {
+            delay = 0.1 // Make sure, they're not too fast
         }
         
         // CFRelease(cfProperties)
@@ -81,6 +81,10 @@ extension UIImage {
     }
     
     class func gcdForArray(array: Array<Int>) -> Int {
+        if array.isEmpty {
+            return 1
+        }
+        
         var gcd = array[0]
         
         for val in array {
@@ -102,7 +106,7 @@ extension UIImage {
             
             // At it's delay in cs
             var delaySeconds = UIImage.delayForImageAtIndex(UInt(i), source: source)
-            delays.append(Int(delaySeconds * 1000.0)) // Seconds to cs
+            delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
         }
         
         // Calculate full duration
