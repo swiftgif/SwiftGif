@@ -15,9 +15,8 @@ extension UIImage {
     class func animatedImageWithData(data: NSData) -> UIImage? {
         let source = CGImageSourceCreateWithData(data, nil).takeRetainedValue()
         let image = UIImage.animatedImageWithSource(source)
-        // CFRelease(source) // We need to do this, because source is from type Unmanaged<CGImageSource>
+        CFRelease(source) // We need to do this, because source is from type Unmanaged<CGImageSource>
         
-        println(image)
         return image
     }
     
@@ -42,7 +41,7 @@ extension UIImage {
             delay = 0.1 // Make sure, they're not too fast
         }
         
-        // CFRelease(cfProperties)
+        CFRelease(cfProperties)
         
         return delay
     }
@@ -137,11 +136,6 @@ extension UIImage {
         
         // Heyhey
         let animation = UIImage.animatedImageWithImages(frames, duration: Double(duration) / 1000.0)
-        
-        // Free resources
-        for var i = images.count - 1; i > 0; --i {
-            // CGImageRelease(images[i])
-        }
         
         return animation
     }
