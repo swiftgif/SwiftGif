@@ -9,7 +9,6 @@
 import UIKit
 import ImageIO
 
-// TODO: Release stuff
 extension UIImage {
     
     class func animatedImageWithData(data: NSData) -> UIImage? {
