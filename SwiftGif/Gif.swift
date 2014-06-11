@@ -1,6 +1,6 @@
 //
 //  Gif.swift
-//  Gifd
+//  SwiftGif
 //
 //  Created by Arne Bahlo on 07.06.14.
 //  Copyright (c) 2014 Arne Bahlo. All rights reserved.
@@ -9,7 +9,6 @@
 import UIKit
 import ImageIO
 
-// TODO: Release stuff
 extension UIImage {
     
     class func animatedImageWithData(data: NSData) -> UIImage? {
@@ -46,7 +45,7 @@ extension UIImage {
         return delay
     }
     
-    class func gcdForPair(var a: Int?, var b: Int?) -> Int {
+    class func gcdForPair(var a: Int?, var _ b: Int?) -> Int {
         // Check if one of them is nil
         if !a || !b {
             if b {
@@ -87,7 +86,7 @@ extension UIImage {
         var gcd = array[0]
         
         for val in array {
-            gcd = UIImage.gcdForPair(val, b: gcd)
+            gcd = UIImage.gcdForPair(val, gcd)
         }
         
         return gcd

@@ -1,4 +1,4 @@
-# swift-gif
+# SwiftGif
 
 A small `UIImage` extension with gif support.
 

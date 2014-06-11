@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14C34DA6194769CD00F68707"
-               BuildableName = "swift-gif.app"
-               BlueprintName = "swift-gif"
-               ReferencedContainer = "container:swift-gif.xcodeproj">
+               BlueprintIdentifier = "1448EB6A19491D2000D54654"
+               BuildableName = "SwiftGif.app"
+               BlueprintName = "SwiftGif"
+               ReferencedContainer = "container:SwiftGif.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14C34DB6194769CD00F68707"
-               BuildableName = "swift-gifTests.xctest"
-               BlueprintName = "swift-gifTests"
-               ReferencedContainer = "container:swift-gif.xcodeproj">
+               BlueprintIdentifier = "1448EB7719491D2100D54654"
+               BuildableName = "SwiftGifTests.xctest"
+               BlueprintName = "SwiftGifTests"
+               ReferencedContainer = "container:SwiftGif.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14C34DA6194769CD00F68707"
-            BuildableName = "swift-gif.app"
-            BlueprintName = "swift-gif"
-            ReferencedContainer = "container:swift-gif.xcodeproj">
+            BlueprintIdentifier = "1448EB6A19491D2000D54654"
+            BuildableName = "SwiftGif.app"
+            BlueprintName = "SwiftGif"
+            ReferencedContainer = "container:SwiftGif.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14C34DA6194769CD00F68707"
-            BuildableName = "swift-gif.app"
-            BlueprintName = "swift-gif"
-            ReferencedContainer = "container:swift-gif.xcodeproj">
+            BlueprintIdentifier = "1448EB6A19491D2000D54654"
+            BuildableName = "SwiftGif.app"
+            BlueprintName = "SwiftGif"
+            ReferencedContainer = "container:SwiftGif.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14C34DA6194769CD00F68707"
-            BuildableName = "swift-gif.app"
-            BlueprintName = "swift-gif"
-            ReferencedContainer = "container:swift-gif.xcodeproj">
+            BlueprintIdentifier = "1448EB6A19491D2000D54654"
+            BuildableName = "SwiftGif.app"
+            BlueprintName = "SwiftGif"
+            ReferencedContainer = "container:SwiftGif.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
