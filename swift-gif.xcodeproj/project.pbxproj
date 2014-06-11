@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		147ACF1A1947943B00AC0F68 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 147ACF191947943B00AC0F68 /* adventure-time.gif */; };
 		14C34DAD194769CD00F68707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAC194769CD00F68707 /* AppDelegate.swift */; };
-		14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */; };
 		14C34DB2194769CD00F68707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DB1194769CD00F68707 /* Images.xcassets */; };
-		14C34DBE194769CD00F68707 /* swift_gifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DBD194769CD00F68707 /* swift_gifTests.swift */; };
 		14C34DC8194769E100F68707 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC7194769E100F68707 /* RootViewController.swift */; };
 		14C34DCA19476AD600F68707 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC919476AD600F68707 /* Gif.swift */; };
 		14C34DCC1947715B00F68707 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DCB1947715B00F68707 /* jeremy.gif */; };
+		14C8FEBE19490FC700989940 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C8FEBD19490FC700989940 /* GifTests.swift */; };
+		14C8FEBF1949123900989940 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC919476AD600F68707 /* Gif.swift */; };
+		14C8FEC11949147A00989940 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14C8FEC01949147A00989940 /* test.gif */; };
+		14C8FEC21949198C00989940 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14C8FEC01949147A00989940 /* test.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,14 @@
 		14C34DA7194769CD00F68707 /* swift-gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-gif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C34DAB194769CD00F68707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C34DAC194769CD00F68707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14C34DAF194769CD00F68707 /* swift_gif.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift_gif.xcdatamodel; sourceTree = "<group>"; };
 		14C34DB1194769CD00F68707 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14C34DB7194769CD00F68707 /* swift-gifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-gifTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C34DBC194769CD00F68707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14C34DBD194769CD00F68707 /* swift_gifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_gifTests.swift; sourceTree = "<group>"; };
 		14C34DC7194769E100F68707 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		14C34DC919476AD600F68707 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		14C34DCB1947715B00F68707 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
+		14C8FEBD19490FC700989940 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
+		14C8FEC01949147A00989940 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test.gif; path = "swift-gifTests/test.gif"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,6 @@
 				14C34DB1194769CD00F68707 /* Images.xcassets */,
 				14C34DCB1947715B00F68707 /* jeremy.gif */,
 				147ACF191947943B00AC0F68 /* adventure-time.gif */,
-				14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */,
 				14C34DAA194769CD00F68707 /* Supporting Files */,
 			);
 			path = "swift-gif";
@@ -104,7 +105,8 @@
 		14C34DBA194769CD00F68707 /* swift-gifTests */ = {
 			isa = PBXGroup;
 			children = (
-				14C34DBD194769CD00F68707 /* swift_gifTests.swift */,
+				14C8FEBD19490FC700989940 /* GifTests.swift */,
+				14C8FEC01949147A00989940 /* test.gif */,
 				14C34DBB194769CD00F68707 /* Supporting Files */,
 			);
 			path = "swift-gifTests";
@@ -197,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C8FEC21949198C00989940 /* test.gif in Resources */,
 				147ACF1A1947943B00AC0F68 /* adventure-time.gif in Resources */,
 				14C34DCC1947715B00F68707 /* jeremy.gif in Resources */,
 				14C34DB2194769CD00F68707 /* Images.xcassets in Resources */,
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C8FEC11949147A00989940 /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */,
 				14C34DAD194769CD00F68707 /* AppDelegate.swift in Sources */,
 				14C34DCA19476AD600F68707 /* Gif.swift in Sources */,
 				14C34DC8194769E100F68707 /* RootViewController.swift in Sources */,
@@ -228,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C34DBE194769CD00F68707 /* swift_gifTests.swift in Sources */,
+				14C8FEBF1949123900989940 /* Gif.swift in Sources */,
+				14C8FEBE19490FC700989940 /* GifTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,19 +413,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				14C34DAF194769CD00F68707 /* swift_gif.xcdatamodel */,
-			);
-			currentVersion = 14C34DAF194769CD00F68707 /* swift_gif.xcdatamodel */;
-			path = swift_gif.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 14C34D9F194769CD00F68707 /* Project object */;
 }
