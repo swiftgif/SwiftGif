@@ -1,4 +1,4 @@
-# SwiftGif [![Build Status](https://travis-ci.org/bahlo/SwiftGif.svg?branch=master)](https://travis-ci.org/bahlo/SwiftGif)
+# SwiftGif
 
 A small `UIImage` extension with gif support.
 
