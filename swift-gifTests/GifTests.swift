@@ -21,7 +21,7 @@ class GifTests: XCTestCase {
         super.tearDown()
     }
 
-    func textGCDForPair() {
+    func testGCDForPair() {
         let values = (9, 4011)
         let result = UIImage.gcdForPair(values.0, values.1)
         let expected = 3
@@ -29,10 +29,10 @@ class GifTests: XCTestCase {
         XCTAssert(result == expected, "UIImage.gcdForPair(\(values.0), \(values.1)) = \(result), but should be \(expected)")
     }
 
-    func textGCDForArray() {
+    func testGCDForArray() {
         let values = [13, 17_381, 169]
         let result = UIImage.gcdForArray(values)
-        let expected = 3
+        let expected = 13
 
         XCTAssert(result == expected, "UIImage.gcdForArray(\(values)) = \(result), but should be \(expected)")
     }

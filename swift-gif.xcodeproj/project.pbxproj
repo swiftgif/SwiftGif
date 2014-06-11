@@ -15,6 +15,7 @@
 		14C34DCC1947715B00F68707 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DCB1947715B00F68707 /* jeremy.gif */; };
 		14C8FEBE19490FC700989940 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C8FEBD19490FC700989940 /* GifTests.swift */; };
 		14C8FEBF1949123900989940 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC919476AD600F68707 /* Gif.swift */; };
+		14C8FEC11949147A00989940 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14C8FEC01949147A00989940 /* test.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		14C34DC919476AD600F68707 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		14C34DCB1947715B00F68707 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
 		14C8FEBD19490FC700989940 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
+		14C8FEC01949147A00989940 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				14C8FEBD19490FC700989940 /* GifTests.swift */,
+				14C8FEC01949147A00989940 /* test.gif */,
 				14C34DBB194769CD00F68707 /* Supporting Files */,
 			);
 			path = "swift-gifTests";
@@ -205,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C8FEC11949147A00989940 /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
