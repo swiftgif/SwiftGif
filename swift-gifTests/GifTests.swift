@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import UIKit
 
 class GifTests: XCTestCase {
 
@@ -21,19 +22,19 @@ class GifTests: XCTestCase {
     }
 
     func textGCDForPair() {
-        
+        let values = (9, 4011)
+        let result = UIImage.gcdForPair(values.0, values.1)
+        let expected = 3
+
+        XCTAssert(result == expected, "UIImage.gcdForPair(\(values.0), \(values.1)) = \(result), but should be \(expected)")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
+    func textGCDForArray() {
+        let values = [13, 17_381, 169]
+        let result = UIImage.gcdForArray(values)
+        let expected = 3
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+        XCTAssert(result == expected, "UIImage.gcdForArray(\(values)) = \(result), but should be \(expected)")
     }
 
 }

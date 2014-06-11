@@ -14,6 +14,7 @@
 		14C34DCA19476AD600F68707 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC919476AD600F68707 /* Gif.swift */; };
 		14C34DCC1947715B00F68707 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DCB1947715B00F68707 /* jeremy.gif */; };
 		14C8FEBE19490FC700989940 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C8FEBD19490FC700989940 /* GifTests.swift */; };
+		14C8FEBF1949123900989940 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC919476AD600F68707 /* Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C8FEBF1949123900989940 /* Gif.swift in Sources */,
 				14C8FEBE19490FC700989940 /* GifTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
