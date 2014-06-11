@@ -8,16 +8,25 @@
 
 import XCTest
 import UIKit
+import ImageIO
 
 class GifTests: XCTestCase {
 
+    var imageData: NSData?
+    var source: CGImageSourceRef?
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        imageData = NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("test", withExtension: "gif"))
+
+        let cfImageData = imageData! as CFDataRef
+        source = CGImageSourceCreateWithData(cfImageData, nil).takeRetainedValue()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        imageData = nil
+
         super.tearDown()
     }
 
@@ -35,6 +44,13 @@ class GifTests: XCTestCase {
         let expected = 13
 
         XCTAssert(result == expected, "UIImage.gcdForArray(\(values)) = \(result), but should be \(expected)")
+    }
+
+    func testDelayForImageAtIndex() {
+        let result = UIImage.delayForImageAtIndex(0, source: source!)
+        let expected = 0.5
+
+        XCTAssert(result == expected, "UIImage.delayForImageAtIndex(0, source) = \(result), but should be \(expected)")
     }
 
 }
