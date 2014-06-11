@@ -20,6 +20,10 @@ class GifTests: XCTestCase {
         super.tearDown()
     }
 
+    func textGCDForPair() {
+        
+    }
+
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		147ACF1A1947943B00AC0F68 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 147ACF191947943B00AC0F68 /* adventure-time.gif */; };
 		14C34DAD194769CD00F68707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAC194769CD00F68707 /* AppDelegate.swift */; };
-		14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */; };
 		14C34DB2194769CD00F68707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C34DB1194769CD00F68707 /* Images.xcassets */; };
 		14C34DC8194769E100F68707 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC7194769E100F68707 /* RootViewController.swift */; };
 		14C34DCA19476AD600F68707 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C34DC919476AD600F68707 /* Gif.swift */; };
@@ -32,7 +31,6 @@
 		14C34DA7194769CD00F68707 /* swift-gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-gif.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C34DAB194769CD00F68707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C34DAC194769CD00F68707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14C34DAF194769CD00F68707 /* swift_gif.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swift_gif.xcdatamodel; sourceTree = "<group>"; };
 		14C34DB1194769CD00F68707 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14C34DB7194769CD00F68707 /* swift-gifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-gifTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C34DBC194769CD00F68707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				14C34DB1194769CD00F68707 /* Images.xcassets */,
 				14C34DCB1947715B00F68707 /* jeremy.gif */,
 				147ACF191947943B00AC0F68 /* adventure-time.gif */,
-				14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */,
 				14C34DAA194769CD00F68707 /* Supporting Files */,
 			);
 			path = "swift-gif";
@@ -217,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C34DB0194769CD00F68707 /* swift_gif.xcdatamodeld in Sources */,
 				14C34DAD194769CD00F68707 /* AppDelegate.swift in Sources */,
 				14C34DCA19476AD600F68707 /* Gif.swift in Sources */,
 				14C34DC8194769E100F68707 /* RootViewController.swift in Sources */,
@@ -409,19 +405,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		14C34DAE194769CD00F68707 /* swift_gif.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				14C34DAF194769CD00F68707 /* swift_gif.xcdatamodel */,
-			);
-			currentVersion = 14C34DAF194769CD00F68707 /* swift_gif.xcdatamodel */;
-			path = swift_gif.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 14C34D9F194769CD00F68707 /* Project object */;
 }
