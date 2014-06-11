@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1448EB7119491D2000D54654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB7019491D2000D54654 /* AppDelegate.swift */; };
+		1448EB7319491D2000D54654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB7219491D2000D54654 /* Images.xcassets */; };
+		1448EB8A19491D6C00D54654 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8819491D6C00D54654 /* GifTests.swift */; };
+		1448EB8B19491D6C00D54654 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8919491D6C00D54654 /* test.gif */; };
+		1448EB9019491D7D00D54654 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8C19491D7D00D54654 /* adventure-time.gif */; };
+		1448EB9119491D7D00D54654 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* Gif.swift */; };
+		1448EB9219491D7D00D54654 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8E19491D7D00D54654 /* jeremy.gif */; };
+		1448EB9319491D7D00D54654 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8F19491D7D00D54654 /* RootViewController.swift */; };
+		1448EB9419491DB100D54654 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8919491D6C00D54654 /* test.gif */; };
+		1448EB9519491DB500D54654 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* Gif.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1448EB7919491D2100D54654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1448EB6319491D2000D54654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1448EB6A19491D2000D54654;
+			remoteInfo = SwiftGif;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1448EB6B19491D2000D54654 /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1448EB6F19491D2000D54654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1448EB7019491D2000D54654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1448EB7219491D2000D54654 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1448EB7819491D2100D54654 /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1448EB7D19491D2100D54654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1448EB8819491D6C00D54654 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
+		1448EB8919491D6C00D54654 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		1448EB8C19491D7D00D54654 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
+		1448EB8D19491D7D00D54654 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		1448EB8E19491D7D00D54654 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
+		1448EB8F19491D7D00D54654 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1448EB6819491D2000D54654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1448EB7519491D2100D54654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1448EB6219491D2000D54654 = {
+			isa = PBXGroup;
+			children = (
+				1448EB6D19491D2000D54654 /* SwiftGif */,
+				1448EB7B19491D2100D54654 /* SwiftGifTests */,
+				1448EB6C19491D2000D54654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1448EB6C19491D2000D54654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1448EB6B19491D2000D54654 /* SwiftGif.app */,
+				1448EB7819491D2100D54654 /* SwiftGifTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1448EB6D19491D2000D54654 /* SwiftGif */ = {
+			isa = PBXGroup;
+			children = (
+				1448EB7019491D2000D54654 /* AppDelegate.swift */,
+				1448EB8F19491D7D00D54654 /* RootViewController.swift */,
+				1448EB8D19491D7D00D54654 /* Gif.swift */,
+				1448EB7219491D2000D54654 /* Images.xcassets */,
+				1448EB8C19491D7D00D54654 /* adventure-time.gif */,
+				1448EB8E19491D7D00D54654 /* jeremy.gif */,
+				1448EB6E19491D2000D54654 /* Supporting Files */,
+			);
+			path = SwiftGif;
+			sourceTree = "<group>";
+		};
+		1448EB6E19491D2000D54654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1448EB6F19491D2000D54654 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1448EB7B19491D2100D54654 /* SwiftGifTests */ = {
+			isa = PBXGroup;
+			children = (
+				1448EB8819491D6C00D54654 /* GifTests.swift */,
+				1448EB8919491D6C00D54654 /* test.gif */,
+				1448EB7C19491D2100D54654 /* Supporting Files */,
+			);
+			path = SwiftGifTests;
+			sourceTree = "<group>";
+		};
+		1448EB7C19491D2100D54654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1448EB7D19491D2100D54654 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1448EB6A19491D2000D54654 /* SwiftGif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1448EB8219491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGif" */;
+			buildPhases = (
+				1448EB6719491D2000D54654 /* Sources */,
+				1448EB6819491D2000D54654 /* Frameworks */,
+				1448EB6919491D2000D54654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGif;
+			productName = SwiftGif;
+			productReference = 1448EB6B19491D2000D54654 /* SwiftGif.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1448EB7719491D2100D54654 /* SwiftGifTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1448EB8519491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
+			buildPhases = (
+				1448EB7419491D2100D54654 /* Sources */,
+				1448EB7519491D2100D54654 /* Frameworks */,
+				1448EB7619491D2100D54654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1448EB7A19491D2100D54654 /* PBXTargetDependency */,
+			);
+			name = SwiftGifTests;
+			productName = SwiftGifTests;
+			productReference = 1448EB7819491D2100D54654 /* SwiftGifTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1448EB6319491D2000D54654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Arne Bahlo";
+				TargetAttributes = {
+					1448EB6A19491D2000D54654 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1448EB7719491D2100D54654 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 1448EB6A19491D2000D54654;
+					};
+				};
+			};
+			buildConfigurationList = 1448EB6619491D2000D54654 /* Build configuration list for PBXProject "SwiftGif" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1448EB6219491D2000D54654;
+			productRefGroup = 1448EB6C19491D2000D54654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1448EB6A19491D2000D54654 /* SwiftGif */,
+				1448EB7719491D2100D54654 /* SwiftGifTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1448EB6919491D2000D54654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1448EB9419491DB100D54654 /* test.gif in Resources */,
+				1448EB9219491D7D00D54654 /* jeremy.gif in Resources */,
+				1448EB9019491D7D00D54654 /* adventure-time.gif in Resources */,
+				1448EB7319491D2000D54654 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1448EB7619491D2100D54654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1448EB8B19491D6C00D54654 /* test.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1448EB6719491D2000D54654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1448EB9119491D7D00D54654 /* Gif.swift in Sources */,
+				1448EB7119491D2000D54654 /* AppDelegate.swift in Sources */,
+				1448EB9319491D7D00D54654 /* RootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1448EB7419491D2100D54654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1448EB9519491DB500D54654 /* Gif.swift in Sources */,
+				1448EB8A19491D6C00D54654 /* GifTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1448EB7A19491D2100D54654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1448EB6A19491D2000D54654 /* SwiftGif */;
+			targetProxy = 1448EB7919491D2100D54654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1448EB8019491D2100D54654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1448EB8119491D2100D54654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1448EB8319491D2100D54654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftGif/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1448EB8419491D2100D54654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SwiftGif/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1448EB8619491D2100D54654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftGifTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		1448EB8719491D2100D54654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftGifTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1448EB6619491D2000D54654 /* Build configuration list for PBXProject "SwiftGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1448EB8019491D2100D54654 /* Debug */,
+				1448EB8119491D2100D54654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1448EB8219491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1448EB8319491D2100D54654 /* Debug */,
+				1448EB8419491D2100D54654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1448EB8519491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1448EB8619491D2100D54654 /* Debug */,
+				1448EB8719491D2100D54654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1448EB6319491D2000D54654 /* Project object */;
+}

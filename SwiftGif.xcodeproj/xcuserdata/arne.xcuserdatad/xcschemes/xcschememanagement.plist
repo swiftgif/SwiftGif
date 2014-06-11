@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>swift-gif.xcscheme</key>
+		<key>SwiftGif.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14C34DA6194769CD00F68707</key>
+		<key>1448EB6A19491D2000D54654</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14C34DB6194769CD00F68707</key>
+		<key>1448EB7719491D2100D54654</key>
 		<dict>
 			<key>primary</key>
 			<true/>
