@@ -401,6 +401,7 @@
 				1448EB8419491D2100D54654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1448EB8519491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				1448EB8719491D2100D54654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
