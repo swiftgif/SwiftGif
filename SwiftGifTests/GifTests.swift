@@ -26,6 +26,7 @@ class GifTests: XCTestCase {
 
     override func tearDown() {
         imageData = nil
+        source = nil
 
         super.tearDown()
     }
