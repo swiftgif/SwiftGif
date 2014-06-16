@@ -12,11 +12,11 @@
 		1448EB8A19491D6C00D54654 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8819491D6C00D54654 /* GifTests.swift */; };
 		1448EB8B19491D6C00D54654 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8919491D6C00D54654 /* test.gif */; };
 		1448EB9019491D7D00D54654 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8C19491D7D00D54654 /* adventure-time.gif */; };
-		1448EB9119491D7D00D54654 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* Gif.swift */; };
+		1448EB9119491D7D00D54654 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */; };
 		1448EB9219491D7D00D54654 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8E19491D7D00D54654 /* jeremy.gif */; };
 		1448EB9319491D7D00D54654 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8F19491D7D00D54654 /* RootViewController.swift */; };
 		1448EB9419491DB100D54654 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8919491D6C00D54654 /* test.gif */; };
-		1448EB9519491DB500D54654 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* Gif.swift */; };
+		1448EB9519491DB500D54654 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		1448EB8819491D6C00D54654 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
 		1448EB8919491D6C00D54654 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		1448EB8C19491D7D00D54654 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
-		1448EB8D19491D7D00D54654 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		1448EB8E19491D7D00D54654 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
 		1448EB8F19491D7D00D54654 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +85,7 @@
 			children = (
 				1448EB7019491D2000D54654 /* AppDelegate.swift */,
 				1448EB8F19491D7D00D54654 /* RootViewController.swift */,
-				1448EB8D19491D7D00D54654 /* Gif.swift */,
+				1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */,
 				1448EB7219491D2000D54654 /* Images.xcassets */,
 				1448EB8C19491D7D00D54654 /* adventure-time.gif */,
 				1448EB8E19491D7D00D54654 /* jeremy.gif */,
@@ -221,7 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1448EB9119491D7D00D54654 /* Gif.swift in Sources */,
+				1448EB9119491D7D00D54654 /* UIImage+Gif.swift in Sources */,
 				1448EB7119491D2000D54654 /* AppDelegate.swift in Sources */,
 				1448EB9319491D7D00D54654 /* RootViewController.swift in Sources */,
 			);
@@ -231,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1448EB9519491DB500D54654 /* Gif.swift in Sources */,
+				1448EB9519491DB500D54654 /* UIImage+Gif.swift in Sources */,
 				1448EB8A19491D6C00D54654 /* GifTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
