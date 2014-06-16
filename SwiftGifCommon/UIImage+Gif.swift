@@ -14,7 +14,6 @@ extension UIImage {
     class func animatedImageWithData(data: NSData) -> UIImage? {
         let source = CGImageSourceCreateWithData(data, nil).takeRetainedValue()
         let image = UIImage.animatedImageWithSource(source)
-        // CFRelease(source) // We need to do this, because source is from type Unmanaged<CGImageSource>
         
         return image
     }
@@ -23,8 +22,8 @@ extension UIImage {
         var delay = 0.1
         
         // Get dictionaries
-        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
-        let properties: NSDictionary = cfProperties.takeRetainedValue() // Make NSDictionary
+        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil).takeRetainedValue()
+        let properties: NSDictionary = cfProperties // Make NSDictionary
         
         var gifProperties : NSDictionary = properties[String(kCGImagePropertyGIFDictionary)] as NSDictionary
         
@@ -39,8 +38,7 @@ extension UIImage {
         if delay < 0.1 {
             delay = 0.1 // Make sure, they're not too fast
         }
-        
-        // CFRelease(cfProperties)
+
         
         return delay
     }
