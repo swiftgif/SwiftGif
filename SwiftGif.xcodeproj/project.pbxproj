@@ -7,52 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1448EB7119491D2000D54654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB7019491D2000D54654 /* AppDelegate.swift */; };
-		1448EB7319491D2000D54654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB7219491D2000D54654 /* Images.xcassets */; };
-		1448EB8A19491D6C00D54654 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8819491D6C00D54654 /* GifTests.swift */; };
-		1448EB8B19491D6C00D54654 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8919491D6C00D54654 /* test.gif */; };
-		1448EB9019491D7D00D54654 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8C19491D7D00D54654 /* adventure-time.gif */; };
-		1448EB9119491D7D00D54654 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */; };
-		1448EB9219491D7D00D54654 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8E19491D7D00D54654 /* jeremy.gif */; };
-		1448EB9319491D7D00D54654 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8F19491D7D00D54654 /* RootViewController.swift */; };
-		1448EB9419491DB100D54654 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1448EB8919491D6C00D54654 /* test.gif */; };
-		1448EB9519491DB500D54654 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */; };
+		1419B388194EFBFD005DF6D0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
+		1419B389194EFBFD005DF6D0 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B37F194EFBFD005DF6D0 /* adventure-time.gif */; };
+		1419B38A194EFBFD005DF6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B380194EFBFD005DF6D0 /* AppDelegate.swift */; };
+		1419B38B194EFBFD005DF6D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1419B381194EFBFD005DF6D0 /* Images.xcassets */; };
+		1419B38C194EFBFD005DF6D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1419B382194EFBFD005DF6D0 /* Info.plist */; };
+		1419B38D194EFBFD005DF6D0 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B383194EFBFD005DF6D0 /* jeremy.gif */; };
+		1419B38E194EFBFD005DF6D0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B384194EFBFD005DF6D0 /* RootViewController.swift */; };
+		1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B378194EFBE7005DF6D0 /* GifTests.swift */; };
+		1419B390194EFC15005DF6D0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B379194EFBE7005DF6D0 /* test.gif */; };
+		1482D738194EFC940038192B /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B379194EFBE7005DF6D0 /* test.gif */; };
+		1482D73A194EFCE00038192B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1482D739194EFCE00038192B /* Info.plist */; };
+		1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1448EB7919491D2100D54654 /* PBXContainerItemProxy */ = {
+		14A76446194EFBB800A74B1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1448EB6319491D2000D54654 /* Project object */;
+			containerPortal = 14A76430194EFBB800A74B1F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1448EB6A19491D2000D54654;
+			remoteGlobalIDString = 14A76437194EFBB800A74B1F;
 			remoteInfo = SwiftGif;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1448EB6B19491D2000D54654 /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1448EB6F19491D2000D54654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1448EB7019491D2000D54654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1448EB7219491D2000D54654 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1448EB7819491D2100D54654 /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1448EB7D19491D2100D54654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1448EB8819491D6C00D54654 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
-		1448EB8919491D6C00D54654 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
-		1448EB8C19491D7D00D54654 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
-		1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
-		1448EB8E19491D7D00D54654 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
-		1448EB8F19491D7D00D54654 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1419B378194EFBE7005DF6D0 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
+		1419B379194EFBE7005DF6D0 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		1419B37F194EFBFD005DF6D0 /* adventure-time.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "adventure-time.gif"; sourceTree = "<group>"; };
+		1419B380194EFBFD005DF6D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1419B381194EFBFD005DF6D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1419B382194EFBFD005DF6D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1419B383194EFBFD005DF6D0 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
+		1419B384194EFBFD005DF6D0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1482D739194EFCE00038192B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A76438194EFBB800A74B1F /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1448EB6819491D2000D54654 /* Frameworks */ = {
+		14A76435194EFBB800A74B1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1448EB7519491D2100D54654 /* Frameworks */ = {
+		14A76442194EFBB800A74B1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,74 +64,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1448EB6219491D2000D54654 = {
+		1419B377194EFBE7005DF6D0 /* SwiftGifTests */ = {
 			isa = PBXGroup;
 			children = (
-				1448EB6D19491D2000D54654 /* SwiftGif */,
-				1448EB7B19491D2100D54654 /* SwiftGifTests */,
-				1448EB6C19491D2000D54654 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		1448EB6C19491D2000D54654 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1448EB6B19491D2000D54654 /* SwiftGif.app */,
-				1448EB7819491D2100D54654 /* SwiftGifTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1448EB6D19491D2000D54654 /* SwiftGif */ = {
-			isa = PBXGroup;
-			children = (
-				1448EB7019491D2000D54654 /* AppDelegate.swift */,
-				1448EB8F19491D7D00D54654 /* RootViewController.swift */,
-				1448EB8D19491D7D00D54654 /* UIImage+Gif.swift */,
-				1448EB7219491D2000D54654 /* Images.xcassets */,
-				1448EB8C19491D7D00D54654 /* adventure-time.gif */,
-				1448EB8E19491D7D00D54654 /* jeremy.gif */,
-				1448EB6E19491D2000D54654 /* Supporting Files */,
-			);
-			path = SwiftGif;
-			sourceTree = "<group>";
-		};
-		1448EB6E19491D2000D54654 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1448EB6F19491D2000D54654 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1448EB7B19491D2100D54654 /* SwiftGifTests */ = {
-			isa = PBXGroup;
-			children = (
-				1448EB8819491D6C00D54654 /* GifTests.swift */,
-				1448EB8919491D6C00D54654 /* test.gif */,
-				1448EB7C19491D2100D54654 /* Supporting Files */,
+				1419B378194EFBE7005DF6D0 /* GifTests.swift */,
+				1419B379194EFBE7005DF6D0 /* test.gif */,
+				1482D739194EFCE00038192B /* Info.plist */,
 			);
 			path = SwiftGifTests;
 			sourceTree = "<group>";
 		};
-		1448EB7C19491D2100D54654 /* Supporting Files */ = {
+		1419B37C194EFBFD005DF6D0 /* SwiftGifCommon */ = {
 			isa = PBXGroup;
 			children = (
-				1448EB7D19491D2100D54654 /* Info.plist */,
+				1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */,
 			);
-			name = "Supporting Files";
+			path = SwiftGifCommon;
+			sourceTree = "<group>";
+		};
+		1419B37E194EFBFD005DF6D0 /* SwiftGifDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1419B380194EFBFD005DF6D0 /* AppDelegate.swift */,
+				1419B384194EFBFD005DF6D0 /* RootViewController.swift */,
+				1419B381194EFBFD005DF6D0 /* Images.xcassets */,
+				1419B37F194EFBFD005DF6D0 /* adventure-time.gif */,
+				1419B383194EFBFD005DF6D0 /* jeremy.gif */,
+				1419B382194EFBFD005DF6D0 /* Info.plist */,
+			);
+			path = SwiftGifDemo;
+			sourceTree = "<group>";
+		};
+		14A7642F194EFBB800A74B1F = {
+			isa = PBXGroup;
+			children = (
+				1419B37E194EFBFD005DF6D0 /* SwiftGifDemo */,
+				1419B37C194EFBFD005DF6D0 /* SwiftGifCommon */,
+				1419B377194EFBE7005DF6D0 /* SwiftGifTests */,
+				14A76439194EFBB800A74B1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14A76439194EFBB800A74B1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14A76438194EFBB800A74B1F /* SwiftGif.app */,
+				14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1448EB6A19491D2000D54654 /* SwiftGif */ = {
+		14A76437194EFBB800A74B1F /* SwiftGif */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1448EB8219491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGif" */;
+			buildConfigurationList = 14A7644F194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGif" */;
 			buildPhases = (
-				1448EB6719491D2000D54654 /* Sources */,
-				1448EB6819491D2000D54654 /* Frameworks */,
-				1448EB6919491D2000D54654 /* Resources */,
+				14A76434194EFBB800A74B1F /* Sources */,
+				14A76435194EFBB800A74B1F /* Frameworks */,
+				14A76436194EFBB800A74B1F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -137,117 +131,119 @@
 			);
 			name = SwiftGif;
 			productName = SwiftGif;
-			productReference = 1448EB6B19491D2000D54654 /* SwiftGif.app */;
+			productReference = 14A76438194EFBB800A74B1F /* SwiftGif.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1448EB7719491D2100D54654 /* SwiftGifTests */ = {
+		14A76444194EFBB800A74B1F /* SwiftGifTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1448EB8519491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
+			buildConfigurationList = 14A76452194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
 			buildPhases = (
-				1448EB7419491D2100D54654 /* Sources */,
-				1448EB7519491D2100D54654 /* Frameworks */,
-				1448EB7619491D2100D54654 /* Resources */,
+				14A76441194EFBB800A74B1F /* Sources */,
+				14A76442194EFBB800A74B1F /* Frameworks */,
+				14A76443194EFBB800A74B1F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1448EB7A19491D2100D54654 /* PBXTargetDependency */,
+				14A76447194EFBB800A74B1F /* PBXTargetDependency */,
 			);
 			name = SwiftGifTests;
 			productName = SwiftGifTests;
-			productReference = 1448EB7819491D2100D54654 /* SwiftGifTests.xctest */;
+			productReference = 14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1448EB6319491D2000D54654 /* Project object */ = {
+		14A76430194EFBB800A74B1F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Arne Bahlo";
 				TargetAttributes = {
-					1448EB6A19491D2000D54654 = {
+					14A76437194EFBB800A74B1F = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					1448EB7719491D2100D54654 = {
+					14A76444194EFBB800A74B1F = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 1448EB6A19491D2000D54654;
+						TestTargetID = 14A76437194EFBB800A74B1F;
 					};
 				};
 			};
-			buildConfigurationList = 1448EB6619491D2000D54654 /* Build configuration list for PBXProject "SwiftGif" */;
+			buildConfigurationList = 14A76433194EFBB800A74B1F /* Build configuration list for PBXProject "SwiftGif" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 1448EB6219491D2000D54654;
-			productRefGroup = 1448EB6C19491D2000D54654 /* Products */;
+			mainGroup = 14A7642F194EFBB800A74B1F;
+			productRefGroup = 14A76439194EFBB800A74B1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1448EB6A19491D2000D54654 /* SwiftGif */,
-				1448EB7719491D2100D54654 /* SwiftGifTests */,
+				14A76437194EFBB800A74B1F /* SwiftGif */,
+				14A76444194EFBB800A74B1F /* SwiftGifTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1448EB6919491D2000D54654 /* Resources */ = {
+		14A76436194EFBB800A74B1F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1448EB9419491DB100D54654 /* test.gif in Resources */,
-				1448EB9219491D7D00D54654 /* jeremy.gif in Resources */,
-				1448EB9019491D7D00D54654 /* adventure-time.gif in Resources */,
-				1448EB7319491D2000D54654 /* Images.xcassets in Resources */,
+				1482D738194EFC940038192B /* test.gif in Resources */,
+				1419B38C194EFBFD005DF6D0 /* Info.plist in Resources */,
+				1419B38D194EFBFD005DF6D0 /* jeremy.gif in Resources */,
+				1419B38B194EFBFD005DF6D0 /* Images.xcassets in Resources */,
+				1419B389194EFBFD005DF6D0 /* adventure-time.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1448EB7619491D2100D54654 /* Resources */ = {
+		14A76443194EFBB800A74B1F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1448EB8B19491D6C00D54654 /* test.gif in Resources */,
+				1482D73A194EFCE00038192B /* Info.plist in Resources */,
+				1419B390194EFC15005DF6D0 /* test.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1448EB6719491D2000D54654 /* Sources */ = {
+		14A76434194EFBB800A74B1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1448EB9119491D7D00D54654 /* UIImage+Gif.swift in Sources */,
-				1448EB7119491D2000D54654 /* AppDelegate.swift in Sources */,
-				1448EB9319491D7D00D54654 /* RootViewController.swift in Sources */,
+				1419B38A194EFBFD005DF6D0 /* AppDelegate.swift in Sources */,
+				1419B388194EFBFD005DF6D0 /* UIImage+Gif.swift in Sources */,
+				1419B38E194EFBFD005DF6D0 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1448EB7419491D2100D54654 /* Sources */ = {
+		14A76441194EFBB800A74B1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1448EB9519491DB500D54654 /* UIImage+Gif.swift in Sources */,
-				1448EB8A19491D6C00D54654 /* GifTests.swift in Sources */,
+				1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */,
+				1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1448EB7A19491D2100D54654 /* PBXTargetDependency */ = {
+		14A76447194EFBB800A74B1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1448EB6A19491D2000D54654 /* SwiftGif */;
-			targetProxy = 1448EB7919491D2100D54654 /* PBXContainerItemProxy */;
+			target = 14A76437194EFBB800A74B1F /* SwiftGif */;
+			targetProxy = 14A76446194EFBB800A74B1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1448EB8019491D2100D54654 /* Debug */ = {
+		14A7644D194EFBB800A74B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +285,7 @@
 			};
 			name = Debug;
 		};
-		1448EB8119491D2100D54654 /* Release */ = {
+		14A7644E194EFBB800A74B1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,29 +320,29 @@
 			};
 			name = Release;
 		};
-		1448EB8319491D2100D54654 /* Debug */ = {
+		14A76450194EFBB800A74B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SwiftGif/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftGifDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		1448EB8419491D2100D54654 /* Release */ = {
+		14A76451194EFBB800A74B1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = SwiftGif/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftGifDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		1448EB8619491D2100D54654 /* Debug */ = {
+		14A76453194EFBB800A74B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
@@ -366,7 +362,7 @@
 			};
 			name = Debug;
 		};
-		1448EB8719491D2100D54654 /* Release */ = {
+		14A76454194EFBB800A74B1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
@@ -385,34 +381,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1448EB6619491D2000D54654 /* Build configuration list for PBXProject "SwiftGif" */ = {
+		14A76433194EFBB800A74B1F /* Build configuration list for PBXProject "SwiftGif" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1448EB8019491D2100D54654 /* Debug */,
-				1448EB8119491D2100D54654 /* Release */,
+				14A7644D194EFBB800A74B1F /* Debug */,
+				14A7644E194EFBB800A74B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1448EB8219491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGif" */ = {
+		14A7644F194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGif" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1448EB8319491D2100D54654 /* Debug */,
-				1448EB8419491D2100D54654 /* Release */,
+				14A76450194EFBB800A74B1F /* Debug */,
+				14A76451194EFBB800A74B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1448EB8519491D2100D54654 /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
+		14A76452194EFBB800A74B1F /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1448EB8619491D2100D54654 /* Debug */,
-				1448EB8719491D2100D54654 /* Release */,
+				14A76453194EFBB800A74B1F /* Debug */,
+				14A76454194EFBB800A74B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1448EB6319491D2000D54654 /* Project object */;
+	rootObject = 14A76430194EFBB800A74B1F /* Project object */;
 }
