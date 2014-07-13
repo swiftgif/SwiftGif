@@ -14,7 +14,6 @@ extension UIImage {
     class func animatedImageWithData(data: NSData) -> UIImage? {
         let source = CGImageSourceCreateWithData(data, nil).takeRetainedValue()
         let image = UIImage.animatedImageWithSource(source)
-        // CFRelease(source) // We need to do this, because source is from type Unmanaged<CGImageSource>
         
         return image
     }
@@ -23,24 +22,23 @@ extension UIImage {
         var delay = 0.1
         
         // Get dictionaries
-        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
-        let properties: NSDictionary = cfProperties.takeRetainedValue() // Make NSDictionary
+        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil).takeRetainedValue()
+        let properties: NSDictionary = cfProperties // Make NSDictionary
         
         var gifProperties : NSDictionary = properties[String(kCGImagePropertyGIFDictionary)] as NSDictionary
         
         // Get delay time
         var number : AnyObject! = gifProperties[String(kCGImagePropertyGIFUnclampedDelayTime)]
-        if number == nil || number.doubleValue == 0 {
+        if number.doubleValue == 0 {
             number = gifProperties[String(kCGImagePropertyGIFDelayTime)]
         }
         
         delay = number as Double
         
         if delay < 0.1 {
-            delay = 0.1 // Make sure, they're not too fast
+            delay = 0.1 // Make sure they're not too fast
         }
-        
-        // CFRelease(cfProperties)
+
         
         return delay
     }
@@ -94,11 +92,11 @@ extension UIImage {
     
     class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
         let count = CGImageSourceGetCount(source)
-        var images = CGImageRef[]()
-        var delays = Int[]()
+        var images = [CGImageRef]()
+        var delays = [Int]()
         
         // Fill arrays
-        for i in 0..count {
+        for i in 0..<count {
             // Add image
             images.append(CGImageSourceCreateImageAtIndex(source, i, nil).takeRetainedValue())
             
@@ -120,15 +118,15 @@ extension UIImage {
         
         // Get frames
         let gcd = gcdForArray(delays)
-        var frames = UIImage[]()
+        var frames = [UIImage]()
         
         var frame: UIImage
         var frameCount: Int
-        for i in 0..count {
+        for i in 0..<count {
             frame = UIImage(CGImage: images[Int(i)])
             frameCount = Int(delays[Int(i)] / gcd)
             
-            for j in 0..frameCount {
+            for j in 0..<frameCount {
                 frames.append(frame)
             }
         }
