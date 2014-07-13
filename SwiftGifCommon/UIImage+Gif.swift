@@ -29,14 +29,14 @@ extension UIImage {
         
         // Get delay time
         var number : AnyObject! = gifProperties[String(kCGImagePropertyGIFUnclampedDelayTime)]
-        if number == nil || number.doubleValue == 0 {
+        if number.doubleValue == 0 {
             number = gifProperties[String(kCGImagePropertyGIFDelayTime)]
         }
         
         delay = number as Double
         
         if delay < 0.1 {
-            delay = 0.1 // Make sure, they're not too fast
+            delay = 0.1 // Make sure they're not too fast
         }
 
         
@@ -92,11 +92,11 @@ extension UIImage {
     
     class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
         let count = CGImageSourceGetCount(source)
-        var images = CGImageRef[]()
-        var delays = Int[]()
+        var images = [CGImageRef]()
+        var delays = [Int]()
         
         // Fill arrays
-        for i in 0..count {
+        for i in 0..<count {
             // Add image
             images.append(CGImageSourceCreateImageAtIndex(source, i, nil).takeRetainedValue())
             
@@ -118,15 +118,15 @@ extension UIImage {
         
         // Get frames
         let gcd = gcdForArray(delays)
-        var frames = UIImage[]()
+        var frames = [UIImage]()
         
         var frame: UIImage
         var frameCount: Int
-        for i in 0..count {
+        for i in 0..<count {
             frame = UIImage(CGImage: images[Int(i)])
             frameCount = Int(delays[Int(i)] / gcd)
             
-            for j in 0..frameCount {
+            for j in 0..<frameCount {
                 frames.append(frame)
             }
         }
