@@ -10,7 +10,7 @@ import UIKit
 
 class RootViewController: UIViewController {
     
-    init() {
+    override init() {
         super.init(nibName: nil, bundle: nil);
     }
     

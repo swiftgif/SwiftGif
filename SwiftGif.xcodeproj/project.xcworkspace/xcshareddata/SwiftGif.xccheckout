@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>296869D0-C15D-4327-A221-B75F7F6D6F5B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftGif</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CC1CB80635DAA6EE75D19EA4BDDA420AB94DBCEA</key>
+		<string>github.com:bahlo/SwiftGif.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftGif.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CC1CB80635DAA6EE75D19EA4BDDA420AB94DBCEA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:bahlo/SwiftGif.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC1CB80635DAA6EE75D19EA4BDDA420AB94DBCEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC1CB80635DAA6EE75D19EA4BDDA420AB94DBCEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftGif</string>
+		</dict>
+	</array>
+</dict>
+</plist>
