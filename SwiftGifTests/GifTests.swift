@@ -21,7 +21,7 @@ class GifTests: XCTestCase {
         imageData = NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("test", withExtension: "gif"))
 
         let cfImageData = imageData! as CFDataRef
-        source = CGImageSourceCreateWithData(cfImageData, nil).takeRetainedValue()
+        source = CGImageSourceCreateWithData(cfImageData, nil)
     }
 
     override func tearDown() {
@@ -57,7 +57,7 @@ class GifTests: XCTestCase {
     func testAnimatedImageWithSource() {
         let image = UIImage.animatedImageWithSource(source!)
 
-        XCTAssert(image, "UIImage.animatedImageWithSource(source) is nil, but shouldn't")
+        XCTAssert(image! == nil, "UIImage.animatedImageWithSource(source) is nil, but shouldn't")
 
         // Note: There should be 12, because they delay is the same for all
         XCTAssert(image!.images.count == 12, "image.images.count = \(image!.images.count), but should be 12")
