@@ -13,6 +13,11 @@ class RootViewController: UIViewController {
     override init() {
         super.init(nibName: nil, bundle: nil);
     }
+
+    // Why?
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
