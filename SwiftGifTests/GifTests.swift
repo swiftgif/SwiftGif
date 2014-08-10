@@ -57,7 +57,7 @@ class GifTests: XCTestCase {
     func testAnimatedImageWithSource() {
         let image = UIImage.animatedImageWithSource(source!)
 
-        XCTAssert(image! == nil, "UIImage.animatedImageWithSource(source) is nil, but shouldn't")
+        XCTAssertNotNil(image?, "UIImage.animatedImageWithSource(source) is nil, but shouldn't")
 
         // Note: There should be 12, because they delay is the same for all
         XCTAssert(image!.images.count == 12, "image.images.count = \(image!.images.count), but should be 12")
