@@ -12,7 +12,7 @@ import ImageIO
 extension UIImage {
     
     class func animatedImageWithData(data: NSData) -> UIImage? {
-        let source = CGImageSourceCreateWithData(data, nil).takeRetainedValue()
+        let source = CGImageSourceCreateWithData(data, nil)
         let image = UIImage.animatedImageWithSource(source)
         
         return image
@@ -22,15 +22,15 @@ extension UIImage {
         var delay = 0.1
         
         // Get dictionaries
-        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil).takeRetainedValue()
+        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
         let properties: NSDictionary = cfProperties // Make NSDictionary
         
-        var gifProperties : NSDictionary = properties[String(kCGImagePropertyGIFDictionary)] as NSDictionary
+        var gifProperties : NSDictionary = properties[kCGImagePropertyGIFDictionary] as NSDictionary
         
         // Get delay time
-        var number : AnyObject! = gifProperties[String(kCGImagePropertyGIFUnclampedDelayTime)]
+        var number : AnyObject! = gifProperties[kCGImagePropertyGIFUnclampedDelayTime]
         if number.doubleValue == 0 {
-            number = gifProperties[String(kCGImagePropertyGIFDelayTime)]
+            number = gifProperties[kCGImagePropertyGIFDelayTime]
         }
         
         delay = number as Double
@@ -45,10 +45,10 @@ extension UIImage {
     
     class func gcdForPair(var a: Int?, var _ b: Int?) -> Int {
         // Check if one of them is nil
-        if !a || !b {
-            if b {
+        if b == nil || a == nil {
+            if b != nil {
                 return b!
-            } else if a {
+            } else if a != nil {
                 return a!
             } else {
                 return 0
@@ -98,7 +98,7 @@ extension UIImage {
         // Fill arrays
         for i in 0..<count {
             // Add image
-            images.append(CGImageSourceCreateImageAtIndex(source, i, nil).takeRetainedValue())
+            images.append(CGImageSourceCreateImageAtIndex(source, i, nil))
             
             // At it's delay in cs
             var delaySeconds = UIImage.delayForImageAtIndex(UInt(i), source: source)

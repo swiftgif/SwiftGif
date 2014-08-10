@@ -10,8 +10,13 @@ import UIKit
 
 class RootViewController: UIViewController {
     
-    init() {
+    override init() {
         super.init(nibName: nil, bundle: nil);
+    }
+
+    // Why?
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
