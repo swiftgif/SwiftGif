@@ -18,7 +18,7 @@ class GifTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        imageData = NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("test", withExtension: "gif"))
+        imageData = NSData(contentsOfURL: NSBundle(forClass:GifTests.self).URLForResource("test", withExtension: "gif"))
 
         let cfImageData = imageData! as CFDataRef
         source = CGImageSourceCreateWithData(cfImageData, nil)
