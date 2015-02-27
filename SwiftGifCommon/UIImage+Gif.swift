@@ -18,22 +18,29 @@ extension UIImage {
         return image
     }
     
-    class func delayForImageAtIndex(index: UInt, source: CGImageSourceRef) -> Double {
+    class func delayForImageAtIndex(index: UInt, source: CGImageSourceRef)
+        -> Double {
         var delay = 0.1
         
         // Get dictionaries
-        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
-        let properties: NSDictionary = cfProperties // Make NSDictionary
-        
-        var gifProperties : NSDictionary = properties[kCGImagePropertyGIFDictionary] as NSDictionary
-        
+        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index,
+            nil)
+        let gifProperties: CFDictionaryRef = unsafeBitCast(
+            CFDictionaryGetValue(cfProperties,
+                unsafeAddressOf(kCGImagePropertyGIFDictionary)),
+            CFDictionary.self)
+
         // Get delay time
-        var number : AnyObject! = gifProperties[kCGImagePropertyGIFUnclampedDelayTime]
-        if number.doubleValue == 0 {
-            number = gifProperties[kCGImagePropertyGIFDelayTime]
+        var delayObject: AnyObject = unsafeBitCast(
+            CFDictionaryGetValue(gifProperties,
+                unsafeAddressOf(kCGImagePropertyGIFUnclampedDelayTime)),
+            AnyObject.self)
+        if delayObject.doubleValue == 0 {
+            delayObject = unsafeBitCast(CFDictionaryGetValue(gifProperties,
+                unsafeAddressOf(kCGImagePropertyGIFDelayTime)), AnyObject.self)
         }
         
-        delay = number as Double
+        delay = delayObject as! Double
         
         if delay < 0.1 {
             delay = 0.1 // Make sure they're not too fast
@@ -101,7 +108,8 @@ extension UIImage {
             images.append(CGImageSourceCreateImageAtIndex(source, i, nil))
             
             // At it's delay in cs
-            var delaySeconds = UIImage.delayForImageAtIndex(UInt(i), source: source)
+            var delaySeconds = UIImage.delayForImageAtIndex(UInt(i),
+                source: source)
             delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
         }
         
@@ -123,7 +131,7 @@ extension UIImage {
         var frame: UIImage
         var frameCount: Int
         for i in 0..<count {
-            frame = UIImage(CGImage: images[Int(i)])
+            frame = UIImage(CGImage: images[Int(i)])!
             frameCount = Int(delays[Int(i)] / gcd)
             
             for j in 0..<frameCount {
@@ -132,7 +140,8 @@ extension UIImage {
         }
         
         // Heyhey
-        let animation = UIImage.animatedImageWithImages(frames, duration: Double(duration) / 1000.0)
+        let animation = UIImage.animatedImageWithImages(frames,
+            duration: Double(duration) / 1000.0)
         
         return animation
     }

@@ -2,7 +2,7 @@
 
 A small `UIImage` extension with gif support.
 
-![](demo.gif)
+![Demo gif](demo.gif)
 
 ## Usage
 Import the `Gif.swift` in your project and do the following:
@@ -22,6 +22,10 @@ Easy, it does the following:
 2. Find the greatest common divisor
 3. Add frames accordingly to the greatest common divisor to an array
 4. Create an animated UIImage with the frames
+
+# Inspiration
+This project is heavily inspired by [uiimage-from-animated-gif](https://github.com/mayoff/uiimage-from-animated-gif).
+Kudos to [@mayoff](https://github.com/mayoff). :thumbsup:
 
 ## License
 This repository is licensed under the MIT license, more under
