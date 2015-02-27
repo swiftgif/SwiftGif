@@ -18,7 +18,8 @@ class GifTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        imageData = NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("test", withExtension: "gif"))
+        imageData = NSData(contentsOfURL: NSBundle(forClass:GifTests.self)
+            .URLForResource("test", withExtension: "gif")!)
 
         let cfImageData = imageData! as CFDataRef
         source = CGImageSourceCreateWithData(cfImageData, nil)
@@ -36,7 +37,8 @@ class GifTests: XCTestCase {
         let result = UIImage.gcdForPair(values.0, values.1)
         let expected = 3
 
-        XCTAssert(result == expected, "UIImage.gcdForPair(\(values.0), \(values.1)) = \(result), but should be \(expected)")
+        XCTAssert(result == expected,
+            "UIImage.gcdForPair(\(values.0), \(values.1)) = \(result), but should be \(expected)")
     }
 
     func testGCDForArray() {
@@ -44,23 +46,27 @@ class GifTests: XCTestCase {
         let result = UIImage.gcdForArray(values)
         let expected = 13
 
-        XCTAssert(result == expected, "UIImage.gcdForArray(\(values)) = \(result), but should be \(expected)")
+        XCTAssert(result == expected,
+            "UIImage.gcdForArray(\(values)) = \(result), but should be \(expected)")
     }
 
     func testDelayForImageAtIndex() {
         let result = UIImage.delayForImageAtIndex(0, source: source!)
         let expected = 0.5
 
-        XCTAssert(result == expected, "UIImage.delayForImageAtIndex(0, source) = \(result), but should be \(expected)")
+        XCTAssert(result == expected,
+            "UIImage.delayForImageAtIndex(0, source) = \(result), but should be \(expected)")
     }
 
     func testAnimatedImageWithSource() {
         let image = UIImage.animatedImageWithSource(source!)
 
-        XCTAssertNotNil(image?, "UIImage.animatedImageWithSource(source) is nil, but shouldn't")
+        XCTAssertNotNil(image,
+            "UIImage.animatedImageWithSource(source) is nil, but shouldn't")
 
         // Note: There should be 12, because they delay is the same for all
-        XCTAssert(image!.images.count == 12, "image.images.count = \(image!.images.count), but should be 12")
+        let frames = image!.images as Array?
+        XCTAssert(frames!.count == 12, "image.images.count = \(frames!.count), but should be 12")
 
         XCTAssert(image!.duration == 6.0, "image.duration = \(image!.duration), but should be 6.0")
     }
