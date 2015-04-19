@@ -18,13 +18,12 @@ extension UIImage {
         return image
     }
     
-    class func delayForImageAtIndex(index: UInt, source: CGImageSourceRef)
+    class func delayForImageAtIndex(index: Int, source: CGImageSource!)
         -> Double {
         var delay = 0.1
         
         // Get dictionaries
-        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index,
-            nil)
+        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source,index,nil)
         let gifProperties: CFDictionaryRef = unsafeBitCast(
             CFDictionaryGetValue(cfProperties,
                 unsafeAddressOf(kCGImagePropertyGIFDictionary)),
@@ -108,7 +107,7 @@ extension UIImage {
             images.append(CGImageSourceCreateImageAtIndex(source, i, nil))
             
             // At it's delay in cs
-            var delaySeconds = UIImage.delayForImageAtIndex(UInt(i),
+            var delaySeconds = UIImage.delayForImageAtIndex(Int(i),
                 source: source)
             delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
         }
