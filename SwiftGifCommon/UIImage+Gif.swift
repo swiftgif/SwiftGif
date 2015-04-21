@@ -23,7 +23,7 @@ extension UIImage {
         var delay = 0.1
         
         // Get dictionaries
-        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source,index,nil)
+        let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
         let gifProperties: CFDictionaryRef = unsafeBitCast(
             CFDictionaryGetValue(cfProperties,
                 unsafeAddressOf(kCGImagePropertyGIFDictionary)),
