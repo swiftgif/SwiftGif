@@ -11,7 +11,7 @@ import ImageIO
 
 extension UIImage {
     
-    class func animatedImageWithData(data: NSData) -> UIImage? {
+    public class func animatedImageWithData(data: NSData) -> UIImage? {
         let source = CGImageSourceCreateWithData(data, nil)
         let image = UIImage.animatedImageWithSource(source)
         
@@ -96,7 +96,7 @@ extension UIImage {
         return gcd
     }
     
-    class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
+    public class func animatedImageWithSource(source: CGImageSource) -> UIImage? {
         let count = CGImageSourceGetCount(source)
         var images = [CGImageRef]()
         var delays = [Int]()
