@@ -8,11 +8,10 @@ A small `UIImage` extension with gif support.
 Import the `Gif.swift` in your project and do the following:
 ```swift
 // jeremy.gif
-var url = NSBundle.mainBundle().URLForResource("jeremy", withExtension: "gif")
-var imageData = NSData(contentsOfURL: url)
-
 // Returns an animated UIImage
-UIImage.animatedImageWithData(imageData)
+let jeremyGif = UIImage.gifWithName("jeremy")
+// Use the UIImage in your UIImageView
+let imageView = UIImageView(image: jeremyGif)
 ```
 
 ## How does it work?
