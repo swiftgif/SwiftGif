@@ -7,9 +7,9 @@ A small `UIImage` extension with gif support.
 ## Usage
 Import the `Gif.swift` in your project and do the following:
 ```swift
-// jeremy.gif
 // Returns an animated UIImage
 let jeremyGif = UIImage.gifWithName("jeremy")
+
 // Use the UIImage in your UIImageView
 let imageView = UIImageView(image: jeremyGif)
 ```
