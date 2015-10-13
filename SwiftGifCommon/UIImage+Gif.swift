@@ -11,7 +11,7 @@ import ImageIO
 
 extension UIImage {
     
-    class func gifWithData(data: NSData) -> UIImage? {
+    public class func gifWithData(data: NSData) -> UIImage? {
         guard let source = CGImageSourceCreateWithData(data, nil) else {
             print("SwiftGif: Source for the image does not exist")
             return nil
@@ -19,7 +19,7 @@ extension UIImage {
         return UIImage.animatedImageWithSource(source)
     }
     
-    class func gifWithName(name: String) -> UIImage? {
+    public class func gifWithName(name: String) -> UIImage? {
         guard let bundleURL = NSBundle.mainBundle().URLForResource(name, withExtension: "gif") else {
             print("SwiftGif: This image named \"\(name)\" does not exist")
             return nil
