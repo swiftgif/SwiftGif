@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { 'Arne Bahlo': 'hallo@arne.me' }
 
   s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source = {
     git: 'https://github.com/bahlo/SwiftGif.git',
