@@ -9,15 +9,6 @@
 import UIKit
 
 class RootViewController: UIViewController {
-    
-    init() {
-        super.init(nibName: nil, bundle: nil);
-    }
-
-    required init(coder aDecoder: NSCoder) {
-        // FIXME: Why do we have to implement this?
-        super.init(nibName: nil, bundle: nil)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
