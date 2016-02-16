@@ -10,7 +10,7 @@
         <!--DemoStart-->
         <scene sceneID="U7d-3H-ZoA">
             <objects>
-                <viewController title="DemoStart" id="dd0-6l-EPW" customClass="RootViewController" customModule="SwiftGif" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="DemoStart" id="dd0-6l-EPW" customClass="DemoVC" customModule="SwiftGif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pDj-EP-USu"/>
                         <viewControllerLayoutGuide type="bottom" id="ODE-rc-V7j"/>
@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aqx-oM-KuU" userLabel="Top Image View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aqx-oM-KuU" userLabel="Top Image View">
                                 <rect key="frame" x="-4" y="0.0" width="383" height="333.5"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXd-hZ-D9C" userLabel="Bottom Image View">
@@ -39,6 +39,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomImageView" destination="rXd-hZ-D9C" id="oUB-G9-Idr"/>
+                        <outlet property="topImageView" destination="aqx-oM-KuU" id="ptN-cW-EqU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZ2-k8-JvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
