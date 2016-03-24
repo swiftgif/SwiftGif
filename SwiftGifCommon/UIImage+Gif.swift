@@ -84,7 +84,9 @@ extension UIImage {
         return delay
     }
 
-    class func gcdForPair(var a: Int?, var _ b: Int?) -> Int {
+    class func gcdForPair(a: Int?, _ b: Int?) -> Int {
+        var a = a
+        var b = b
         // Check if one of them is nil
         if b == nil || a == nil {
             if b != nil {
