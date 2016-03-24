@@ -60,10 +60,12 @@ extension UIImage {
 
         // Get dictionaries
         let cfProperties = CGImageSourceCopyPropertiesAtIndex(source, index, nil)
-        let gifProperties: CFDictionaryRef = unsafeBitCast(
-            CFDictionaryGetValue(cfProperties,
-                unsafeAddressOf(kCGImagePropertyGIFDictionary)),
-            CFDictionary.self)
+        let gifPropertiesPointer = UnsafeMutablePointer<UnsafePointer<Void>>.alloc(0)
+        if CFDictionaryGetValueIfPresent(cfProperties, unsafeAddressOf(kCGImagePropertyGIFDictionary), gifPropertiesPointer) == false {
+            return delay
+        }
+        
+        let gifProperties:CFDictionaryRef = unsafeBitCast(gifPropertiesPointer.memory, CFDictionary.self)
 
         // Get delay time
         var delayObject: AnyObject = unsafeBitCast(
