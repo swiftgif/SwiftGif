@@ -5,7 +5,11 @@ A small `UIImage` extension with gif support.
 ![Demo gif](demo.gif)
 
 ## Usage
-Import the `Gif.swift` in your project and do the following:
+Either install with CocoaPods by adding the below to your Pods file:
+```
+pod 'SwiftGifOrigin'
+```
+or import the `Gif.swift` in your project and do the following:
 ```swift
 // Returns an animated UIImage
 let jeremyGif = UIImage.gifWithName("jeremy")
