@@ -21,9 +21,9 @@ extension UIImage {
         return UIImage.animatedImageWithSource(source)
     }
 
-    public class func gifWithURL(gifUrl:String) -> UIImage? {
+    public class func gifWithURL(gifUrl: String) -> UIImage? {
         // Validate URL
-        guard let bundleURL:NSURL? = NSURL(string: gifUrl)
+        guard let bundleURL: NSURL? = NSURL(string: gifUrl)
             else {
                 print("SwiftGif: This image named \"\(gifUrl)\" does not exist")
                 return nil
