@@ -75,7 +75,7 @@ extension UIImage {
                 unsafeAddressOf(kCGImagePropertyGIFDelayTime)), AnyObject.self)
         }
 
-        delay = delayObject as! Double
+        delay = delayObject as? Double ?? 0
 
         if delay < 0.1 {
             delay = 0.1 // Make sure they're not too fast
