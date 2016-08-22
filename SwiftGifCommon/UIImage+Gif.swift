@@ -10,7 +10,7 @@ import UIKit
 import ImageIO
 
 extension UIImageView {
-    
+
     public func loadGif(name: String) {
         DispatchQueue.global().async {
             let image = UIImage.gif(name: name)
@@ -19,7 +19,7 @@ extension UIImageView {
             }
         }
     }
-    
+
 }
 
 extension UIImage {
@@ -36,10 +36,9 @@ extension UIImage {
 
     public class func gif(url: String) -> UIImage? {
         // Validate URL
-        guard let bundleURL = URL(string: url)
-            else {
-                print("SwiftGif: This image named \"\(url)\" does not exist")
-                return nil
+        guard let bundleURL = URL(string: url) else {
+            print("SwiftGif: This image named \"\(url)\" does not exist")
+            return nil
         }
 
         // Validate data
@@ -77,7 +76,7 @@ extension UIImage {
         if CFDictionaryGetValueIfPresent(cfProperties, Unmanaged.passUnretained(kCGImagePropertyGIFDictionary).toOpaque(), gifPropertiesPointer) == false {
             return delay
         }
-        
+
         let gifProperties:CFDictionary = unsafeBitCast(gifPropertiesPointer.pointee, to: CFDictionary.self)
 
         // Get delay time
@@ -90,7 +89,7 @@ extension UIImage {
                 Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
         }
 
-        delay = delayObject as! Double
+        delay = delayObject as? Double ?? 0
 
         if delay < 0.1 {
             delay = 0.1 // Make sure they're not too fast
