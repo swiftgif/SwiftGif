@@ -1,4 +1,4 @@
-# SwiftGif [![Swift 2.0](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/SwiftGifOrigin.svg)](http://cocoadocs.org/docsets/SwiftGifOrigin) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/bahlo/SwiftGif.svg?branch=master)](https://travis-ci.org/bahlo/SwiftGif)
+# SwiftGif [![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods](https://img.shields.io/cocoapods/v/SwiftGifOrigin.svg)](http://cocoadocs.org/docsets/SwiftGifOrigin) [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/Carthage/Carthage) [![Build Status](https://travis-ci.org/bahlo/SwiftGif.svg?branch=master)](https://travis-ci.org/bahlo/SwiftGif)
 
 A small `UIImage` extension with gif support.
 
@@ -7,11 +7,12 @@ A small `UIImage` extension with gif support.
 ## Usage
 Import the `Gif.swift` in your project and do the following:
 ```swift
-// Returns an animated UIImage
-let jeremyGif = UIImage.gifWithName("jeremy")
+// An animated UIImage
+let jeremyGif = UIImage.gif(name: "jeremy")
 
-// Use the UIImage in your UIImageView
-let imageView = UIImageView(image: jeremyGif)
+// A UIImageView with async loading
+let imageView = UIImageView()
+imageView.loadGif(name: "jeremy")
 ```
 
 ## How does it work?
