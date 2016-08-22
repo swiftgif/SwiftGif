@@ -30,4 +30,3 @@ Kudos to [@mayoff](https://github.com/mayoff). :thumbsup:
 ## License
 This repository is licensed under the MIT license, more under
 [LICENSE](LICENSE).
-
