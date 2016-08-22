@@ -23,9 +23,9 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 extension UIImageView {
     
     public func gifWithName(name: String) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+        DispatchQueue.global().async {
             let image = UIImage.gifWithName(name)
-            dispatch_async(dispatch_get_main_queue()) {
+            DispatchQueue.main.async {
                 self.image = image
             }
         }
