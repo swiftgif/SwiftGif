@@ -4,6 +4,17 @@ A small `UIImage` extension with gif support.
 
 ![Demo gif](demo.gif)
 
+## Usage
+
+```swift
+// An animated UIImage
+let jeremyGif = UIImage.gif(name: "jeremy")
+
+// A UIImageView with async loading
+let imageView = UIImageView()
+imageView.loadGif(name: "jeremy")
+```
+
 ## Installation
 ### CocoaPods
 Install [CocoaPods](http://cocoapods.org) with the following command:
@@ -44,17 +55,6 @@ github "bahlo/SwiftGif" ~> 1.6
 Run `carthage update` to build the framework and drag the built
 `SwiftGif.framework` into your Xcode project.
 
-
-## Usage
-
-```swift
-// An animated UIImage
-let jeremyGif = UIImage.gif(name: "jeremy")
-
-// A UIImageView with async loading
-let imageView = UIImageView()
-imageView.loadGif(name: "jeremy")
-```
 
 ## How does it work?
 Easy, it does the following:
