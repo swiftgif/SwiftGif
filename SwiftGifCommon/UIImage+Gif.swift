@@ -9,6 +9,19 @@
 import UIKit
 import ImageIO
 
+extension UIImageView {
+    
+    public func gifWithName(name: String) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            let image = UIImage.gifWithName(name)
+            dispatch_async(dispatch_get_main_queue()) {
+                self.image = image
+            }
+        }
+    }
+    
+}
+
 extension UIImage {
 
     public class func gifWithData(data: NSData) -> UIImage? {
