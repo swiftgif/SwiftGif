@@ -4,12 +4,49 @@ A small `UIImage` extension with gif support.
 
 ![Demo gif](demo.gif)
 
+## Installation
+### CocoaPods
+Install [CocoaPods](http://cocoapods.org) with the following command:
+
+```bash
+gem install cocoapods
+```
+
+Integrate SwiftGif into your Xcode project by creating a `Podfile`:
+
+```ruby
+platform :ios, '9.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'SwiftGifOrigin', '~> 1.6'
+end
+```
+
+Run `pod install` to build your dependencies.
+
+### Carthage
+
+Install [Carthage](https://github.com/Carthage/Carthage) with
+[Homebrew](http://brew.sh/) using the following command:
+
+```bash
+brew update
+brew install carthage
+```
+
+Add the following line to your `Cartfile` to add SwiftGif:
+
+```ogdl
+github "bahlo/SwiftGif" ~> 1.6
+```
+
+Run `carthage update` to build the framework and drag the built
+`SwiftGif.framework` into your Xcode project.
+
+
 ## Usage
-Either install with CocoaPods by adding the below to your Pods file:
-```
-pod 'SwiftGifOrigin'
-```
-or import the `Gif.swift` in your project and do the following:
+
 ```swift
 // An animated UIImage
 let jeremyGif = UIImage.gif(name: "jeremy")
