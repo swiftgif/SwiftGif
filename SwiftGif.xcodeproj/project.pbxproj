@@ -16,6 +16,7 @@
 		1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B378194EFBE7005DF6D0 /* GifTests.swift */; };
 		1419B390194EFC15005DF6D0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B379194EFBE7005DF6D0 /* test.gif */; };
 		1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
+		FB57A0641CA41C2400065109 /* non_standard_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB57A0631CA41C2400065109 /* non_standard_gif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		1482D739194EFCE00038192B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A76438194EFBB800A74B1F /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB57A0631CA41C2400065109 /* non_standard_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = non_standard_gif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				1419B381194EFBFD005DF6D0 /* Images.xcassets */,
 				1419B37F194EFBFD005DF6D0 /* adventure-time.gif */,
 				1419B383194EFBFD005DF6D0 /* jeremy.gif */,
+				FB57A0631CA41C2400065109 /* non_standard_gif.gif */,
 				1419B382194EFBFD005DF6D0 /* Info.plist */,
 			);
 			path = SwiftGifDemo;
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB57A0641CA41C2400065109 /* non_standard_gif.gif in Resources */,
 				1419B38D194EFBFD005DF6D0 /* jeremy.gif in Resources */,
 				1419B38B194EFBFD005DF6D0 /* Images.xcassets in Resources */,
 				1419B389194EFBFD005DF6D0 /* adventure-time.gif in Resources */,
