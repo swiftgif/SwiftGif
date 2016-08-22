@@ -12,16 +12,16 @@ import ImageIO
 
 class GifTests: XCTestCase {
 
-    var imageData: NSData?
-    var source: CGImageSourceRef?
+    var imageData: Data?
+    var source: CGImageSource?
 
     override func setUp() {
         super.setUp()
 
-        imageData = NSData(contentsOfURL: NSBundle(forClass:GifTests.self)
-            .URLForResource("test", withExtension: "gif")!)
+        imageData = try? Data(contentsOf: Bundle(for:GifTests.self)
+            .url(forResource: "test", withExtension: "gif")!)
 
-        let cfImageData = imageData! as CFDataRef
+        let cfImageData = imageData! as CFData
         source = CGImageSourceCreateWithData(cfImageData, nil)
     }
 
@@ -34,7 +34,7 @@ class GifTests: XCTestCase {
 
     func testGCDForPair() {
         let values = (9, 4011)
-        let result = UIImage.gcdForPair(values.0, values.1)
+        let result = UIImage.gcdForPair(values.1, values.0)
         let expected = 3
 
         XCTAssert(result == expected,

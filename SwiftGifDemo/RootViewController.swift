@@ -29,7 +29,7 @@ class RootViewController: UIViewController {
         view.addSubview(imageView)
         
         
-        let imageData = NSData(contentsOfURL: NSBundle.mainBundle().URLForResource("adventure-time", withExtension: "gif")!)
+        let imageData = try? Data(contentsOf: Bundle.main.url(forResource: "adventure-time", withExtension: "gif")!)
         let advTimeGif = UIImage.gifWithData(imageData!)
         let imageView2 = UIImageView(image: advTimeGif)
         imageView2.frame = CGRect(x: 0.0, y: 222.0, width: 350.0, height: 202.0)
