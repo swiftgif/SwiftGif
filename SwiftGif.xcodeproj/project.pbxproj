@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12166BDC1C73A31800FC3CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12166BDB1C73A31800FC3CB5 /* Main.storyboard */; };
+		12166BDE1C73A52A00FC3CB5 /* DemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12166BDD1C73A52A00FC3CB5 /* DemoVC.swift */; };
 		1419B388194EFBFD005DF6D0 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
 		1419B389194EFBFD005DF6D0 /* adventure-time.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B37F194EFBFD005DF6D0 /* adventure-time.gif */; };
 		1419B38A194EFBFD005DF6D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B380194EFBFD005DF6D0 /* AppDelegate.swift */; };
 		1419B38B194EFBFD005DF6D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1419B381194EFBFD005DF6D0 /* Images.xcassets */; };
 		1419B38D194EFBFD005DF6D0 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B383194EFBFD005DF6D0 /* jeremy.gif */; };
-		1419B38E194EFBFD005DF6D0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B384194EFBFD005DF6D0 /* RootViewController.swift */; };
 		1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B378194EFBE7005DF6D0 /* GifTests.swift */; };
 		1419B390194EFC15005DF6D0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B379194EFBE7005DF6D0 /* test.gif */; };
 		1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12166BDB1C73A31800FC3CB5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		12166BDD1C73A52A00FC3CB5 /* DemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoVC.swift; sourceTree = "<group>"; };
 		1419B378194EFBE7005DF6D0 /* GifTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifTests.swift; sourceTree = "<group>"; };
 		1419B379194EFBE7005DF6D0 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
@@ -37,7 +40,6 @@
 		1419B381194EFBFD005DF6D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1419B382194EFBFD005DF6D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1419B383194EFBFD005DF6D0 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
-		1419B384194EFBFD005DF6D0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		1482D739194EFCE00038192B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A76438194EFBB800A74B1F /* SwiftGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				1419B380194EFBFD005DF6D0 /* AppDelegate.swift */,
-				1419B384194EFBFD005DF6D0 /* RootViewController.swift */,
+				12166BDD1C73A52A00FC3CB5 /* DemoVC.swift */,
 				1419B381194EFBFD005DF6D0 /* Images.xcassets */,
 				1419B37F194EFBFD005DF6D0 /* adventure-time.gif */,
 				1419B383194EFBFD005DF6D0 /* jeremy.gif */,
 				1419B382194EFBFD005DF6D0 /* Info.plist */,
+				12166BDB1C73A31800FC3CB5 /* Main.storyboard */,
 			);
 			path = SwiftGifDemo;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				1419B38D194EFBFD005DF6D0 /* jeremy.gif in Resources */,
 				1419B38B194EFBFD005DF6D0 /* Images.xcassets in Resources */,
 				1419B389194EFBFD005DF6D0 /* adventure-time.gif in Resources */,
+				12166BDC1C73A31800FC3CB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1419B38A194EFBFD005DF6D0 /* AppDelegate.swift in Sources */,
+				12166BDE1C73A52A00FC3CB5 /* DemoVC.swift in Sources */,
 				1419B388194EFBFD005DF6D0 /* UIImage+Gif.swift in Sources */,
-				1419B38E194EFBFD005DF6D0 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
