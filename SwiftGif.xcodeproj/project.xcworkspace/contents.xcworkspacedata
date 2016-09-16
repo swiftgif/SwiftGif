@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwiftGif.xcodeproj">
+      location = "self:/Users/arne/Developer/GitHub/SwiftGif/SwiftGif.xcodeproj">
    </FileRef>
 </Workspace>
