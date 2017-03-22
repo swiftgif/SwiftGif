@@ -110,9 +110,9 @@ extension UIImage {
                 Unmanaged.passUnretained(kCGImagePropertyGIFDelayTime).toOpaque()), to: AnyObject.self)
         }
 
-        delay = delayObject as? Double ?? 0
-
-        if delay < 0.1 {
+        if let delayObject = delayObject as? Double, delayObject > 0 {
+            delay = delayObject
+        } else {
             delay = 0.1 // Make sure they're not too fast
         }
 
