@@ -21,6 +21,7 @@
 		14FF87E31D6B7BAA00FB208A /* SwiftGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FF87D31D6B7BAA00FB208A /* SwiftGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14FF87E61D6B7BAA00FB208A /* SwiftGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */; };
 		14FF87E71D6B7BAA00FB208A /* SwiftGif.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9266326F1EC292AD007A31C2 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
 		FB57A0641CA41C2400065109 /* non_standard_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB57A0631CA41C2400065109 /* non_standard_gif.gif */; };
 /* End PBXBuildFile section */
 
@@ -379,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9266326F1EC292AD007A31C2 /* UIImage+Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +505,7 @@
 		14A76450194EFBB800A74B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = AK9NEP7BV6;
@@ -517,6 +520,7 @@
 		14A76451194EFBB800A74B1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = AK9NEP7BV6;
@@ -701,6 +705,7 @@
 				14FF87EA1D6B7BAA00FB208A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14FF87EC1D6B7BAA00FB208A /* Build configuration list for PBXNativeTarget "SwiftGifTests" */ = {
 			isa = XCConfigurationList;
@@ -709,6 +714,7 @@
 				14FF87EE1D6B7BAA00FB208A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
