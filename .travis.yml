@@ -1,9 +1,14 @@
 language: objective-c
-osx_image: xcode8
+osx_image: xcode9.2
 
+before_install:
+  - gem install xcpretty
+before_script:
+  - set -o pipefail
 script:
-  - xctool
-    -project SwiftGif.xcodeproj -scheme SwiftGif
+  - xcodebuild
+    -project SwiftGif.xcodeproj
+    -scheme SwiftGif
     -sdk iphonesimulator
-    -destination "platform=iOS Simulator,name=iPhone 6" build test
+    -destination "platform=iOS Simulator,name=iPhone 8" build test
     CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
