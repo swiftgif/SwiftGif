@@ -64,6 +64,18 @@ Easy, it does the following:
 3. Add frames accordingly to the greatest common divisor to an array
 4. Create an animated UIImage with the frames
 
+## Testing
+
+```
+$ xcodebuild \
+  -project SwiftGif.xcodeproj \
+  -scheme SwiftGif \
+  -sdk iphonesimulator \
+  -destination "platform=iOS Simulator,name=iPhone 8" \
+  build test \
+  CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
+```
+
 # Inspiration
 This project is heavily inspired by [uiimage-from-animated-gif](https://github.com/mayoff/uiimage-from-animated-gif).
 Kudos to [@mayoff](https://github.com/mayoff). :thumbsup:
