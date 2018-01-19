@@ -20,6 +20,16 @@ extension UIImageView {
         }
     }
 
+    @available(iOS 9.0, *)
+    public func loadGif(asset: String) {
+        DispatchQueue.global().async {
+            let image = UIImage.gif(asset: asset)
+            DispatchQueue.main.async {
+                self.image = image
+            }
+        }
+    }
+
 }
 
 extension UIImage {
@@ -65,6 +75,17 @@ extension UIImage {
         }
 
         return gif(data: imageData)
+    }
+
+    @available(iOS 9.0, *)
+    public class func gif(asset: String) -> UIImage? {
+        // Create source from assets catalog
+        guard let dataAsset = NSDataAsset(name: asset) else {
+            print("SwiftGif: Cannot turn image named \"\(asset)\" into NSDataAsset")
+            return nil
+        }
+
+        return gif(data: dataAsset.data)
     }
 
     internal class func delayForImageAtIndex(_ index: Int, source: CGImageSource!) -> Double {
