@@ -13,6 +13,10 @@ let jeremyGif = UIImage.gif(name: "jeremy")
 // A UIImageView with async loading
 let imageView = UIImageView()
 imageView.loadGif(name: "jeremy")
+
+// A UIImageView with async loading from asset catalog(from iOS9)
+let imageView = UIImageView()
+imageView.loadGif(asset: "jeremy")
 ```
 
 ## Installation
