@@ -17,7 +17,6 @@
 		1419B38F194EFC11005DF6D0 /* GifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B378194EFBE7005DF6D0 /* GifTests.swift */; };
 		1419B390194EFC15005DF6D0 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1419B379194EFBE7005DF6D0 /* test.gif */; };
 		1482D73B194EFCF10038192B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419B37D194EFBFD005DF6D0 /* UIImage+Gif.swift */; };
-		14FF87DA1D6B7BAA00FB208A /* SwiftGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */; };
 		14FF87E31D6B7BAA00FB208A /* SwiftGif.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FF87D31D6B7BAA00FB208A /* SwiftGif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14FF87E61D6B7BAA00FB208A /* SwiftGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */; };
 		14FF87E71D6B7BAA00FB208A /* SwiftGif.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -32,20 +31,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 14A76437194EFBB800A74B1F;
 			remoteInfo = SwiftGif;
-		};
-		14FF87DB1D6B7BAA00FB208A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14A76430194EFBB800A74B1F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14FF87D01D6B7BAA00FB208A;
-			remoteInfo = SwiftGif;
-		};
-		14FF87DD1D6B7BAA00FB208A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14A76430194EFBB800A74B1F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14A76437194EFBB800A74B1F;
-			remoteInfo = SwiftGifDemo;
 		};
 		14FF87E41D6B7BAA00FB208A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -87,7 +72,6 @@
 		14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14FF87D31D6B7BAA00FB208A /* SwiftGif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGif.h; sourceTree = "<group>"; };
 		14FF87D41D6B7BAA00FB208A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14FF87D91D6B7BAA00FB208A /* SwiftGifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB57A0631CA41C2400065109 /* non_standard_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = non_standard_gif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,14 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14FF87D61D6B7BAA00FB208A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14FF87DA1D6B7BAA00FB208A /* SwiftGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +142,6 @@
 				14A76438194EFBB800A74B1F /* SwiftGifDemo.app */,
 				14A76445194EFBB800A74B1F /* SwiftGifTests.xctest */,
 				14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */,
-				14FF87D91D6B7BAA00FB208A /* SwiftGifTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,25 +225,6 @@
 			productReference = 14FF87D11D6B7BAA00FB208A /* SwiftGif.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14FF87D81D6B7BAA00FB208A /* SwiftGifTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14FF87EC1D6B7BAA00FB208A /* Build configuration list for PBXNativeTarget "SwiftGifTests" */;
-			buildPhases = (
-				14FF87D51D6B7BAA00FB208A /* Sources */,
-				14FF87D61D6B7BAA00FB208A /* Frameworks */,
-				14FF87D71D6B7BAA00FB208A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				14FF87DC1D6B7BAA00FB208A /* PBXTargetDependency */,
-				14FF87DE1D6B7BAA00FB208A /* PBXTargetDependency */,
-			);
-			name = SwiftGifTests;
-			productName = SwiftGifTests;
-			productReference = 14FF87D91D6B7BAA00FB208A /* SwiftGifTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -292,11 +248,6 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
-					14FF87D81D6B7BAA00FB208A = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 14A76437194EFBB800A74B1F;
-					};
 				};
 			};
 			buildConfigurationList = 14A76433194EFBB800A74B1F /* Build configuration list for PBXProject "SwiftGif" */;
@@ -314,7 +265,6 @@
 				14A76437194EFBB800A74B1F /* SwiftGifDemo */,
 				14A76444194EFBB800A74B1F /* SwiftGifTests */,
 				14FF87D01D6B7BAA00FB208A /* SwiftGif */,
-				14FF87D81D6B7BAA00FB208A /* SwiftGifTests */,
 			);
 		};
 /* End PBXProject section */
@@ -341,13 +291,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		14FF87CF1D6B7BAA00FB208A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14FF87D71D6B7BAA00FB208A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,13 +327,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14FF87D51D6B7BAA00FB208A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -398,16 +334,6 @@
 			isa = PBXTargetDependency;
 			target = 14A76437194EFBB800A74B1F /* SwiftGifDemo */;
 			targetProxy = 14A76446194EFBB800A74B1F /* PBXContainerItemProxy */;
-		};
-		14FF87DC1D6B7BAA00FB208A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14FF87D01D6B7BAA00FB208A /* SwiftGif */;
-			targetProxy = 14FF87DB1D6B7BAA00FB208A /* PBXContainerItemProxy */;
-		};
-		14FF87DE1D6B7BAA00FB208A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14A76437194EFBB800A74B1F /* SwiftGifDemo */;
-			targetProxy = 14FF87DD1D6B7BAA00FB208A /* PBXContainerItemProxy */;
 		};
 		14FF87E51D6B7BAA00FB208A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -535,7 +461,7 @@
 		14A76453194EFBB800A74B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -547,14 +473,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.arne.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGifDemo.app/SwiftGifDemo";
 			};
 			name = Debug;
 		};
 		14A76454194EFBB800A74B1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftGif.app/SwiftGif";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftGifTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -562,7 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "me.arne.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGifDemo.app/SwiftGifDemo";
 			};
 			name = Release;
 		};
@@ -623,48 +549,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		14FF87ED1D6B7BAA00FB208A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = AK9NEP7BV6;
-				INFOPLIST_FILE = SwiftGifTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = me.arne.SwiftGifTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGifDemo.app/SwiftGifDemo";
-			};
-			name = Debug;
-		};
-		14FF87EE1D6B7BAA00FB208A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = AK9NEP7BV6;
-				INFOPLIST_FILE = SwiftGifTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = me.arne.SwiftGifTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftGifDemo.app/SwiftGifDemo";
 			};
 			name = Release;
 		};
