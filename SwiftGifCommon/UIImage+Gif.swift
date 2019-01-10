@@ -97,11 +97,12 @@ extension UIImage {
         defer {
             gifPropertiesPointer.deallocate()
         }
-        if CFDictionaryGetValueIfPresent(cfProperties, Unmanaged.passUnretained(kCGImagePropertyGIFDictionary).toOpaque(), gifPropertiesPointer) == false {
+        let unsafePointer = Unmanaged.passUnretained(kCGImagePropertyGIFDictionary).toOpaque()
+        if CFDictionaryGetValueIfPresent(cfProperties, unsafePointer, gifPropertiesPointer) == false {
             return delay
         }
 
-        let gifProperties:CFDictionary = unsafeBitCast(gifPropertiesPointer.pointee, to: CFDictionary.self)
+        let gifProperties: CFDictionary = unsafeBitCast(gifPropertiesPointer.pointee, to: CFDictionary.self)
 
         // Get delay time
         var delayObject: AnyObject = unsafeBitCast(
@@ -122,42 +123,42 @@ extension UIImage {
         return delay
     }
 
-    internal class func gcdForPair(_ a: Int?, _ b: Int?) -> Int {
-        var a = a
-        var b = b
+    internal class func gcdForPair(_ lhs: Int?, _ rhs: Int?) -> Int {
+        var lhs = lhs
+        var rhs = rhs
         // Check if one of them is nil
-        if b == nil || a == nil {
-            if b != nil {
-                return b!
-            } else if a != nil {
-                return a!
+        if rhs == nil || lhs == nil {
+            if rhs != nil {
+                return rhs!
+            } else if lhs != nil {
+                return lhs!
             } else {
                 return 0
             }
         }
 
         // Swap for modulo
-        if a! < b! {
-            let c = a
-            a = b
-            b = c
+        if lhs! < rhs! {
+            let ctp = lhs
+            lhs = rhs
+            rhs = ctp
         }
 
         // Get greatest common divisor
         var rest: Int
         while true {
-            rest = a! % b!
+            rest = lhs! % rhs!
 
             if rest == 0 {
-                return b! // Found it
+                return rhs! // Found it
             } else {
-                a = b
-                b = rest
+                lhs = rhs
+                rhs = rest
             }
         }
     }
 
-    internal class func gcdForArray(_ array: Array<Int>) -> Int {
+    internal class func gcdForArray(_ array: [Int]) -> Int {
         if array.isEmpty {
             return 1
         }
@@ -177,14 +178,14 @@ extension UIImage {
         var delays = [Int]()
 
         // Fill arrays
-        for i in 0..<count {
+        for index in 0..<count {
             // Add image
-            if let image = CGImageSourceCreateImageAtIndex(source, i, nil) {
+            if let image = CGImageSourceCreateImageAtIndex(source, index, nil) {
                 images.append(image)
             }
 
             // At it's delay in cs
-            let delaySeconds = UIImage.delayForImageAtIndex(Int(i),
+            let delaySeconds = UIImage.delayForImageAtIndex(Int(index),
                 source: source)
             delays.append(Int(delaySeconds * 1000.0)) // Seconds to ms
         }
@@ -206,9 +207,9 @@ extension UIImage {
 
         var frame: UIImage
         var frameCount: Int
-        for i in 0..<count {
-            frame = UIImage(cgImage: images[Int(i)])
-            frameCount = Int(delays[Int(i)] / gcd)
+        for index in 0..<count {
+            frame = UIImage(cgImage: images[Int(index)])
+            frameCount = Int(delays[Int(index)] / gcd)
 
             for _ in 0..<frameCount {
                 frames.append(frame)
