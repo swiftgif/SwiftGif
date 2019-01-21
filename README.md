@@ -34,7 +34,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'SwiftGifOrigin', '~> 1.6.1'
+    pod 'SwiftGifOrigin', '~> 1.7.0'
 end
 ```
 
@@ -53,7 +53,7 @@ brew install carthage
 Add the following line to your `Cartfile` to add SwiftGif:
 
 ```ogdl
-github "bahlo/SwiftGif" ~> 1.6.1
+github "bahlo/SwiftGif" ~> 1.7.0
 ```
 
 Run `carthage update` to build the framework and drag the built
