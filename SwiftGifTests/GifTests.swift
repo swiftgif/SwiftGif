@@ -18,7 +18,7 @@ class GifTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        imageData = try? Data(contentsOf: Bundle(for:GifTests.self)
+        imageData = try? Data(contentsOf: Bundle(for: GifTests.self)
             .url(forResource: "test", withExtension: "gif")!)
 
         let cfImageData = imageData! as CFData
