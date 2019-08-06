@@ -7,6 +7,9 @@ A small `UIImage` extension with gif support.
 ## Usage
 
 ```swift
+// Don't forget to import SwiftGifOrigin first on top of your file!
+import SwiftGifOrigin
+
 // An animated UIImage
 let jeremyGif = UIImage.gif(name: "jeremy")
 
